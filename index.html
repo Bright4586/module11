@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>@media</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+        body {
+            background-color: #123456;
+        }
+
+        .container {
+            padding: 1em 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            flex-flow: column;
+        }
+
+        .container>div {
+            margin: 0.5em 0.5em;
+            padding: 1em;
+            width: calc(100% - 3em);
+            background-color: #ff2222;
+            /*RED = OFF*/
+            border-radius: 999px;
+        }
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+
+        @media screen and (max-width:555px) {
+            .container>.one {
+                background-color: #00ff00;
+                /*GREEN = ON*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="one">purple</div>
+
+        <div class="two">violet</div>
+<div class="three">cyan</div>
+
+     <div class="myDiv">
+  <h2>blue</h2>
+  
+</div>
+
+        <div class="five">black</div>
+
+        <div class="six">white</div>
+
+        <div class="seven">yello</div>
+
+        <div class="eight">red</div>
+
+        <div class="nine">orange</div>
+
+        <div class="ten">green</div>
+    </div>
+
+</body>
+
+</html>
